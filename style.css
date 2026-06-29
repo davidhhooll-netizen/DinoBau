@@ -243,37 +243,51 @@ img { max-width: 100%; display: block; }
   margin-bottom: 18px;
 }
 
-.service-list {
-  list-style: none;
-  display: grid;
-  gap: 10px;
-}
-
-.service-list li {
-  padding-left: 22px;
-  position: relative;
-  color: var(--text);
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-
-.service-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 8px;
-  height: 8px;
-  background: var(--gold);
-  border-radius: 50%;
-}
-
 .service-image img {
   width: 100%;
   height: 360px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: 0 20px 50px -20px rgba(20,19,15,0.5);
+}
+
+/* Secondary / minor service (cleaning) */
+.service-secondary {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid #e8e4d8;
+  border-radius: var(--radius);
+}
+
+.service-secondary-image img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.service-secondary-kicker {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.service-secondary-text h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.service-secondary-text p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 /* About */
@@ -469,4 +483,6 @@ img { max-width: 100%; display: block; }
   .hero h1 { font-size: 2.6rem; }
   .services, .about, .contact { padding: 70px 0; }
   .service-image img { height: 260px; }
+  .service-secondary { grid-template-columns: 1fr; }
+  .service-secondary-image img { height: 140px; }
 }
