@@ -3,20 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DP Bau | Dinu Popusoi – Brückensanierung, Tiefbau & Glasfaser</title>
-<meta name="description" content="DP Bau – Brückeninstandsetzung, Tiefbau- und Glasfaserarbeiten in Krefeld und Umgebung. Zusätzlich: Gebäude- und Baustellenreinigung. Qualität. Zuverlässigkeit. Vertrauen.">
+<title>DP Bau – Dein Profi | Rohbau, Sanierung & Tiefbau Krefeld</title>
+<meta name="description" content="DP Bau – Dein Profi für Rohbau, Maurerarbeiten, Betonarbeiten, Brückeninstandsetzung und Tiefbau in Krefeld. Dino Popusoi, Geschäftsführer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- SVG icon defs (reused throughout page) -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-house" viewBox="0 0 96 62" fill="none">
+    <polyline points="3,37 3,51 21,51 21,37" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="1,39 12,27 23,39" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="7" y="38" width="10" height="9" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="12" y1="38" x2="12" y2="47" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="7" y1="42" x2="17" y2="42" stroke="currentColor" stroke-width="1.5"/>
+    <polyline points="75,37 75,51 93,51 93,37" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="73,39 84,27 95,39" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="79" y="38" width="10" height="9" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="84" y1="38" x2="84" y2="47" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="79" y1="42" x2="89" y2="42" stroke="currentColor" stroke-width="1.5"/>
+    <polyline points="21,35 21,58 75,58 75,35" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="17,37 48,7 79,37" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="30" y="35" width="36" height="23" stroke="currentColor" stroke-width="2"/>
+    <line x1="48" y1="35" x2="48" y2="58" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="30" y1="47" x2="66" y2="47" stroke="currentColor" stroke-width="1.8"/>
+  </symbol>
+  <symbol id="icon-rohbau" viewBox="0 0 40 36" fill="none">
+    <polyline points="2,21 2,34 38,34 38,21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="0,23 20,5 40,23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="14" y="21" width="12" height="13" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="20" y1="21" x2="20" y2="34" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="14" y1="27" x2="26" y2="27" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+  <symbol id="icon-maurer" viewBox="0 0 40 32" fill="none">
+    <rect x="1" y="1" width="17" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="22" y="1" width="17" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="11" y="12" width="18" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="1" y="12" width="7" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="32" y="12" width="7" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="1" y="23" width="17" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+    <rect x="22" y="23" width="17" height="7" stroke="currentColor" stroke-width="2" rx="0.5"/>
+  </symbol>
+  <symbol id="icon-beton" viewBox="0 0 40 40" fill="none">
+    <path d="M8 32 L20 6 L32 18 Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="8" y1="32" x2="3" y2="37" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="27" y1="5" x2="36" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-sanierung" viewBox="0 0 40 36" fill="none">
+    <path d="M6 23 Q6 8 20 8 Q34 8 34 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <rect x="2" y="23" width="36" height="5" rx="2" stroke="currentColor" stroke-width="2"/>
+    <line x1="20" y1="8" x2="20" y2="3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="13" y1="15" x2="27" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
 <header class="site-header">
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <span class="logo-mark">DP</span>
-      <span class="logo-text">BAU</span>
+      <svg class="logo-icon"><use href="#icon-house"/></svg>
+      <div class="logo-words">
+        <span class="logo-dp">DP</span><span class="logo-bau"> BAU</span>
+      </div>
     </a>
     <nav class="main-nav">
       <a href="#leistungen">Leistungen</a>
@@ -28,21 +78,66 @@
 </header>
 
 <section id="top" class="hero">
-  <div class="hero-bg" style="background-image:url('assets/baustelle.jpg')"></div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <p class="hero-kicker">DINU POPUSOI</p>
-    <h1>DP BAU</h1>
-    <p class="hero-tagline">Qualität. <span>Zuverlässigkeit.</span> Vertrauen.</p>
-    <p class="hero-text">Brückeninstandsetzung, Tiefbau- und Glasfaserarbeiten aus Krefeld – für Infrastrukturprojekte und Gewerbeobjekte. Zusätzlich: Gebäude- und Baustellenreinigung.</p>
-    <a href="#kontakt" class="btn btn-primary">Jetzt Anfrage stellen</a>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">DINO POPUSOI · GESCHÄFTSFÜHRER</p>
+      <div class="hero-logo-block">
+        <svg class="hero-house"><use href="#icon-house"/></svg>
+        <h1>DP BAU</h1>
+        <p class="hero-tagline">Dein Profi</p>
+      </div>
+      <p class="hero-text">Rohbau, Maurerarbeiten, Betonarbeiten, Brückeninstandsetzung und Tiefbauarbeiten aus Krefeld – mit Erfahrung, Zuverlässigkeit und Qualitätsbewusstsein.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-primary">Jetzt Anfrage stellen</a>
+        <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/baustelle.jpg" alt="DP Bau – Baustelle bei Nacht">
+    </div>
   </div>
 </section>
 
 <section id="leistungen" class="services">
   <div class="container">
-    <p class="section-kicker">Unsere Bauleistungen</p>
-    <h2>Was wir für Sie bauen &amp; instand halten</h2>
+    <p class="section-kicker">Unsere Leistungen</p>
+    <h2>Was wir für Sie bauen</h2>
+
+    <div class="service-cards">
+
+      <div class="service-card">
+        <div class="card-icon-wrap">
+          <svg><use href="#icon-rohbau"/></svg>
+        </div>
+        <h3>Rohbau</h3>
+        <p>Fundamente, Mauerwerk, Decken und Tragkonstruktionen – fachgerecht und termingerecht ausgeführt.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon-wrap">
+          <svg><use href="#icon-maurer"/></svg>
+        </div>
+        <h3>Maurerarbeiten</h3>
+        <p>Mauerwerk in Ziegel, Kalksandstein oder Beton – präzise für Neubauten und Sanierungen.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon-wrap">
+          <svg><use href="#icon-beton"/></svg>
+        </div>
+        <h3>Betonarbeiten</h3>
+        <p>Bodenplatten, Stützen, Wände und Decken aus Beton – sorgfältig geplant und ausgeführt.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="card-icon-wrap">
+          <svg><use href="#icon-sanierung"/></svg>
+        </div>
+        <h3>Sanierung</h3>
+        <p>Gebäudesanierungen, Fassadenarbeiten und Instandsetzung – wir erhalten und modernisieren Ihre Immobilie.</p>
+      </div>
+
+    </div>
 
     <div class="service-block">
       <div class="service-text">
@@ -50,7 +145,7 @@
         <p>Instandsetzung und Sanierung von Brückenbauwerken – von der Betoninstandsetzung bis zur Pflege der Infrastruktur. Wir sorgen dafür, dass Bauwerke langfristig sicher und funktionstüchtig bleiben.</p>
       </div>
       <div class="service-image">
-        <img src="assets/bruecke.jpg" alt="Brückeninstandsetzung – Betonkonstruktion einer Brücke" loading="lazy">
+        <img src="assets/bruecke.jpg" alt="Brückeninstandsetzung – Betonkonstruktion" loading="lazy">
       </div>
     </div>
 
@@ -60,7 +155,7 @@
         <p>Verlegung von Glasfaserkabeln und Tiefbauarbeiten für eine zuverlässige Infrastruktur – von der Kabelverlegung bis zum fertigen Erdbau.</p>
       </div>
       <div class="service-image">
-        <img src="assets/glasfaser.jpg" alt="Glasfaserkabel auf Kabeltrommeln im Feld" loading="lazy">
+        <img src="assets/glasfaser.jpg" alt="Glasfaserkabel auf Kabeltrommeln" loading="lazy">
       </div>
     </div>
 
@@ -79,15 +174,27 @@
 
 <section id="ueber-uns" class="about">
   <div class="container about-inner">
-    <div>
+    <div class="about-text">
       <p class="section-kicker">Über uns</p>
-      <h2>DP Bau – Ihr Partner für Sanierung &amp; Tiefbau</h2>
-      <p>Unter der Leitung von Dinu Popusoi steht DP Bau für fachgerechte Brückeninstandsetzung sowie professionelle Tiefbau- und Glasfaserarbeiten. Mit Sitz in Krefeld sind wir in der Region und darüber hinaus für Sie im Einsatz – ergänzend bieten wir zuverlässige Gebäude- und Baustellenreinigung an.</p>
+      <h2>DP Bau – Dein Profi für Sanierung &amp; Tiefbau</h2>
+      <p>Unter der Leitung von Dino Popusoi steht DP Bau für soliden Rohbau, fachgerechte Brückeninstandsetzung und professionelle Tiefbau- sowie Glasfaserarbeiten. Mit Sitz in Krefeld sind wir in der Region und darüber hinaus für Sie im Einsatz.</p>
     </div>
     <div class="about-values">
-      <div class="value"><strong>Qualität</strong><span>Sorgfalt bei jedem Auftrag</span></div>
-      <div class="value"><strong>Zuverlässigkeit</strong><span>Termintreue und Verlässlichkeit</span></div>
-      <div class="value"><strong>Vertrauen</strong><span>Langfristige Partnerschaft</span></div>
+      <div class="value">
+        <span class="value-icon"><svg><use href="#icon-rohbau"/></svg></span>
+        <strong>Qualität</strong>
+        <span>Sorgfalt bei jedem Auftrag</span>
+      </div>
+      <div class="value">
+        <span class="value-icon"><svg><use href="#icon-maurer"/></svg></span>
+        <strong>Zuverlässigkeit</strong>
+        <span>Termintreue und Verlässlichkeit</span>
+      </div>
+      <div class="value">
+        <span class="value-icon"><svg><use href="#icon-sanierung"/></svg></span>
+        <strong>Vertrauen</strong>
+        <span>Langfristige Partnerschaft</span>
+      </div>
     </div>
   </div>
 </section>
@@ -97,18 +204,33 @@
     <div class="contact-info">
       <p class="section-kicker">Kontakt</p>
       <h2>Sprechen Sie mit uns</h2>
-      <p>Sie haben ein Projekt oder eine Anfrage? Schreiben Sie uns oder rufen Sie an – wir melden uns zeitnah zurück.</p>
+      <p class="contact-name">Dino Popusoi · <em>Geschäftsführer</em></p>
       <ul class="contact-details">
-        <li><strong>Telefon</strong><a href="tel:+4915223804887">+49 152 23804887</a></li>
-        <li><strong>E-Mail</strong><a href="mailto:dinu.bau.kr@gmail.com">dinu.bau.kr@gmail.com</a></li>
-        <li><strong>Adresse</strong><span>Oppumer Str. 6, 47799 Krefeld</span></li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.23 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          </span>
+          <div><strong>Telefon</strong><a href="tel:+4915223804887">+49 152 23804887</a></div>
+        </li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </span>
+          <div><strong>E-Mail</strong><a href="mailto:dinu.bau.kr@gmail.com">dinu.bau.kr@gmail.com</a></div>
+        </li>
+        <li>
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div><strong>Adresse</strong><span>Oppumer Str. 6, 47799 Krefeld</span></div>
+        </li>
       </ul>
     </div>
 
     <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
       <input type="hidden" name="subject" value="Neue Anfrage über die DP Bau Website">
-      <input type="checkbox" name="botcheck" class="hidden-field" style="display:none">
+      <input type="checkbox" name="botcheck" style="display:none">
 
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -130,11 +252,14 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div class="footer-logo">
-      <span class="logo-mark small">DP</span>
-      <span class="logo-text small">BAU</span>
+    <div class="footer-brand">
+      <svg class="logo-icon small"><use href="#icon-house"/></svg>
+      <div>
+        <div class="footer-name">DP BAU</div>
+        <div class="footer-tagline">Dein Profi</div>
+      </div>
     </div>
-    <p>&copy; <span id="year"></span> DP Bau – Dinu Popusoi. Alle Rechte vorbehalten.</p>
+    <p>&copy; <span id="year"></span> DP Bau – Dino Popusoi. Alle Rechte vorbehalten.</p>
   </div>
 </footer>
 
