@@ -20,4 +20,3 @@ Das Formular sendet per [Web3Forms](https://web3forms.com) an `dinu.bau.kr@gmail
 ## Hosting
 
 Kann direkt z. B. über GitHub Pages veröffentlicht werden (Branch `main`, Root-Verzeichnis).
-# rechnung40
