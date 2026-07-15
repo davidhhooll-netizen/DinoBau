@@ -2,7 +2,7 @@
 
 Landing Page für DP Bau (Dinu Popusoi) – Gebäudereinigung, Brückeninstandsetzung und Glasfaser-/Tiefbauarbeiten.
 
-Statische Seite ohne Build-Schritt: `index.html`, `style.css`, `script.js`, Bilder in `assets/`.
+Statische Seite ohne Build-Schritt: alles (HTML, CSS, JS) in einer einzigen `index.html`. Externe Assets nur via CDN (particles.js, typed.js, ScrollReveal) und Google Fonts. Bilder in `assets/` werden aktuell nicht verwendet.
 
 ## Lokal ansehen
 
