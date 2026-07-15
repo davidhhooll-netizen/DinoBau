@@ -13,12 +13,15 @@
 <style>
   :root{
     --bg:#0a0a0a;
-    --bg-alt:#111111;
+    --bg-alt:#0c1611;
     --gold:#C9A84C;
     --gold-light:#e3c877;
+    --green:#1d3526;
+    --green-light:#2f5a3f;
     --text:#ffffff;
     --text-muted:rgba(255,255,255,.68);
     --border-soft:rgba(201,168,76,.18);
+    --border-green:rgba(63,122,86,.28);
   }
 
   *{ margin:0; padding:0; box-sizing:border-box; }
@@ -106,7 +109,7 @@
     align-items:center;
     justify-content:center;
     text-align:center;
-    background:radial-gradient(ellipse at 50% 20%, #151310 0%, #0a0a0a 65%);
+    background:radial-gradient(ellipse at 50% 20%, #101d16 0%, #0a0a0a 65%);
     overflow:hidden;
   }
 
@@ -200,6 +203,26 @@
     clip-path:polygon(0 4.5vw, 100% 0, 100% calc(100% - 4.5vw), 0 100%);
   }
 
+  /* ---------- Dezente Hintergrundfotos je Sektion ---------- */
+  .section-photo{
+    position:absolute;
+    inset:-20px;
+    z-index:0;
+    background-size:cover;
+    background-position:center;
+    filter:grayscale(60%) brightness(.45) contrast(1.05) blur(3px);
+    opacity:.55;
+  }
+  .section-photo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(160deg, rgba(8,10,9,.88) 0%, rgba(12,24,18,.82) 55%, rgba(8,10,9,.93) 100%);
+  }
+  .photo-baustelle{ background-image:url('assets/baustelle.jpg'); }
+  .photo-bruecke{ background-image:url('assets/bruecke.jpg'); }
+  .photo-reinigung{ background-image:url('assets/reinigung.jpg'); }
+
   .section-title{
     font-size:clamp(1.7rem, 3.6vw, 2.6rem);
     text-align:center;
@@ -243,8 +266,8 @@
   .counter-box{
     text-align:center;
     padding:36px 20px;
-    border:1px solid var(--border-soft);
-    background:rgba(201,168,76,.03);
+    border:1px solid var(--border-green);
+    background:rgba(29,53,38,.35);
   }
   .counter-number{
     font-size:clamp(2.2rem, 5vw, 3.2rem);
@@ -267,8 +290,8 @@
   }
   .service-card{
     padding:42px 30px;
-    background:rgba(255,255,255,.02);
-    border:1px solid var(--border-soft);
+    background:rgba(29,53,38,.28);
+    border:1px solid var(--border-green);
     transition:transform .4s ease, box-shadow .4s ease, border-color .4s ease, background .4s ease;
   }
   .service-card:hover{
@@ -365,9 +388,9 @@
 
   /* ---------- Footer ---------- */
   .footer{
-    background:#080808;
+    background:#070b09;
     padding:38px 0;
-    border-top:1px solid var(--border-soft);
+    border-top:1px solid var(--border-green);
   }
   .footer-inner{
     display:flex;
@@ -418,6 +441,7 @@
 
   <!-- ================= ÜBER UNS ================= -->
   <section class="section clip-down bg-alt" id="about">
+    <div class="section-photo photo-baustelle"></div>
     <div class="container">
       <span class="section-kicker reveal">Über uns</span>
       <h2 class="section-title reveal">DP <span class="gold">Bau</span> aus Krefeld</h2>
@@ -447,6 +471,7 @@
 
   <!-- ================= LEISTUNGEN ================= -->
   <section class="section clip-up" id="services">
+    <div class="section-photo photo-bruecke"></div>
     <div class="container">
       <span class="section-kicker reveal">Was wir tun</span>
       <h2 class="section-title reveal">Unsere <span class="gold">Leistungen</span></h2>
@@ -489,6 +514,7 @@
 
   <!-- ================= WARUM DP BAU ================= -->
   <section class="section clip-down bg-alt" id="why">
+    <div class="section-photo photo-reinigung"></div>
     <div class="container">
       <span class="section-kicker reveal">Unser Anspruch</span>
       <h2 class="section-title reveal">Warum <span class="gold">DP Bau</span>?</h2>
@@ -514,6 +540,7 @@
 
   <!-- ================= KONTAKT ================= -->
   <section class="section clip-up" id="contact">
+    <div class="section-photo photo-bruecke"></div>
     <div class="container">
       <span class="section-kicker reveal">Kontakt</span>
       <h2 class="section-title reveal">Sprechen Sie <span class="gold">mit uns</span></h2>
